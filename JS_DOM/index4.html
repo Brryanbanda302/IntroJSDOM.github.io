@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function cambiarFondo() {
+            const secciones = document.querySelectorAll('section');
+            secciones.forEach((sec) => {
+                sec.style.backgroundColor = 'red';
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="imagenes/Logo.png" alt="Logo" class="logo me-3 ">
+            <a class="navbar-brand" href="#"><strong>CAMBIAR EL TEXTO DE UN ENCABEZADO</strong></a>
+            <div class="collapse navbar-collapse me-5" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><strong>INICIO</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index1.html"><strong>EJERCICIO 1</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html"><strong>EJERCICIO 2</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html"><strong>EJERCICIO 3</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html"><strong>EJERCICIO 4</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html"><strong>EJERCICIO 5</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <section class="p-4 border mb-3">
+        <img src="imagenes/color.jpg" alt="imagen" class="imageness">
+        <p><strong>EL COLOR VERDE ES UNO DE MIS COLORES FAVORITOS</strong></p>
+    </section>
+    <section class="p-4 border mb-3">
+        <img src="imagenes/conejo.jpg" alt="imagen" class="imageness">
+        <p><strong>LOS CONEJOS SON UNO DE MIS ANIMALES FAVORITOS</strong></p>
+    </section>
+    <section class="p-4 border mb-3">
+        <img src="imagenes/ejercicio4.jpg" alt="imagen" class="imageness">
+        <p><strong>EL MOLE ES UNA DE LAS COMIDAS QUE MENOS ME GUSTAN</strong></p>
+    </section>
+
+    <input type="button" value="CAMBIAR FONDO" onclick="cambiarFondo();">
+    <hr>
+    <footer>
+        <b>
+            <p>&copy; 2025 | INTRODUCCIÓN JAVA SCRIPT Y DOM</p>
+    </footer>
+</body>
+
+</html>
